@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora Ana Daniela</title>
+    <link rel="icon" href="">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+            background-color: #89e0e0; /* Aqua */
+            color: #75c4a9; /* Aquamarine */
+        }
+
+        /* Instrucción 1: Sombra neón morada */
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: white;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #bf00ff,
+                0 0 30px #bf00ff,
+                0 0 40px #bf00ff;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* El Reto: Clase .semana para tarjetas elegantes */
+        .semana {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: left;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-left: 8px solid #ec8ed6; /* Detalle en morado neón */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .semana:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(229, 107, 172, 0.2);
+        }
+
+        .semana h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 2px solid #d20ce9;
+            background-color: #f1b4d1;
+        }
+
+        /* Instrucción 2: Efecto Zoom en el logo */
+        footer img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        footer img:hover {
+            transform: scale(1.2); /* Aumenta un 20% el tamaño */
+        }
+
+        span {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
+    </header>
+
+    <main>
+        <!-- Ejemplo de uso de la clase .semana -->
+        <article class="semana">
+            <h2>Semana 1: Introducción</h2>
+            <p>Aquí puedes escribir los detalles de lo aprendido durante la primera semana. El diseño de tarjeta ayuda a que la lectura sea más clara y profesional.</p>
+        </article>
+
+        <article class="semana">
+            <h2>Semana 2: Desarrollo de Proyectos</h2>
+            <p>Contenido relevante sobre las actividades realizadas, objetivos alcanzados y retos superados en esta etapa.</p>
+        </article>
+    </main>
+
+    <footer>
+        <span>@daniiigp</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Colegio" height="50">
+    </footer>
+
+</body>
+</html>
